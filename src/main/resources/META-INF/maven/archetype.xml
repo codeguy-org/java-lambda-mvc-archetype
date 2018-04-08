@@ -1,0 +1,12 @@
+<archetype>
+  <id>mvc-archetype</id>
+  <sources>
+    <source>src/main/java/AppHandler.java</source>
+    <source>src/main/java/controller/MainController.java</source>
+  </sources>
+  <resources>
+    <resource>src/main/resources/templates/home.tpl</resource>
+  </resources>
+  <testSources>
+  </testSources>
+</archetype>
