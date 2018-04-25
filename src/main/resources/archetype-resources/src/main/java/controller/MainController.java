@@ -11,7 +11,7 @@ import com.compellingcode.cloud.lambda.mvc.endpoint.EndpointParameter;
 import com.compellingcode.cloud.lambda.mvc.endpoint.ParameterType;
 import com.compellingcode.cloud.lambda.mvc.endpoint.RequestMethod;
 import com.compellingcode.cloud.lambda.mvc.view.ClasspathResourceLambdaResponse;
-import com.compellingcode.cloud.lambda.mvc.view.HtmlLambdaResponse;
+import com.compellingcode.cloud.lambda.mvc.view.ThymeleafLambdaResponse;
 import com.compellingcode.cloud.lambda.mvc.view.JSONLambdaResponse;
 import com.compellingcode.cloud.lambda.mvc.view.LambdaResponse;
 
@@ -20,7 +20,7 @@ public class MainController {
 
 	@Endpoint(value={"/home", "/"}, method=RequestMethod.GET)
 	public LambdaResponse home() {
-		return new HtmlLambdaResponse("home.tpl");
+		return new ThymeleafLambdaResponse("home.tpl");
 	}
 	
 	// example usage
